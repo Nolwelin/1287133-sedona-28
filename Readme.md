@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Varvara Korchineli](https://up.htmlacademy.ru/htmlcss/28/user/1287133).
-* Наставник: `Руслан Давлетбаев`.
+* Наставник: [Руслан Давлетбаев](https://htmlacademy.ru/profile/davletbaev).
 
 ---
 
