@@ -27,38 +27,59 @@
       </nav>
       </header>
   <main>
-    <article>
-      <div>
-        <h3>Инфраструктура:</h3>
-        <input type="checkbox" checked>
-        <label>Бассейн</label>
+    <form>
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <label>
+          <input type="checkbox" checked>
+        <span>Бассейн</span>
+      </label>
+      <label>
         <input type="checkbox">
-        <label>Парковка</label>
-        <input type="checkbox">
-        <label>WI-FI</label>
-      </div>
-      <div>
-        <h3>Тип жилья:</h3>
-        <input type="checkbox" checked>
-        <label>Гостиница</label>
-        <input type="checkbox" checked>
-        <label>Мотель</label>
-        <input type="checkbox" checked>
-        <label>Апартаменты</label>
-      </div>
-      <div>
-        <h3>Стоимость в сутки (Р):</h3>
-        <label>От</label>
+        <span>Парковка</span>
+      </label>
+        <label>
+          <input type="checkbox">
+        <span>WI-FI</span>
+      </label>
+    </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <label>
+          <input type="checkbox" checked>
+        <span>Гостиница</span>
+      </label>
+
+        <label>
+          <input type="checkbox" checked>
+        <span>Мотель</span>
+      </label>
+
+        <label>
+          <input type="checkbox" checked>
+        <span>Апартаменты</span>
+      </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Стоимость в сутки (Р):</legend>
+        <label>
+          <span>От</span>
         <input type="text" value="0">
-        <label>До</label>
+        </label>
+
+        <label>
+          <span>До</span>
         <input type="text" value="3000">
+      </label>
 
-        <!--Я не знала как сделать слайдер, поэтому пока нашла вот такой-->
-        <input type="range" min="0" max="5000" value="4000">
+        <!--Добавила слайдеру атрибут multiple, но почему-то все равно не показывает так как нужно-->
+        <input type="range" multiple min="0" max="5000" value="0, 4000">
 
-        <button>Показать</button>
-      </div>
-    </article>
+        <button type="submit">Показать</button>
+      </fieldset>
+    </form>
     <article>
       <h2>Найдено: 3</h2>
       <div>
