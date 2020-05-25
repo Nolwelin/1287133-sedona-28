@@ -89,27 +89,28 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </div>
-    <form>
+    <form action="https://echo.htmlacademy.ru" method="post">
       <h2>Поиск Гостиницы в Седоне</h2>
     <label>
       <span>Дата заезда:</span>
-      <input type="text" value="27 апреля 2017" pattern="">
+      <!--Я понимаю, что мой паттерн не очень хороший, но пока не знаю как надо сделать правильно-->
+      <input type="text" id="checkin" name="checkin" pattern="[0-9]{1,2} [а-я]{3,8} [0-9]{4}" value="27 апреля 2017" required>
     </label>
     <label>
       <span>Дата выезда:</span>
-      <input type="text" value="4 июля 2017">
+      <input type="text" id="checkout" name="checkout" pattern="[0-9]{1,2} [а-я]{3,8} [0-9]{4}" value="4 июля 2017" required>
     </label>
     <label for="adult">Взрослые:</label>
       <button type="button">-</button>
-      <input type="number" id="adult" value="2">
+      <input type="number" id="adult" name="adult" min="1" max="20" value="2" required>
       <button type="button">+</button>
 
-      <label for="children">Дети:</label>
-        <button type="button">-</button>
-        <input type="number" id="children" value="0">
-        <button type="button">+</button>
+    <label for="children">Дети:</label>
+      <button type="button">-</button>
+      <input type="number" id="children" name="children" min="0" max="20" value="0" required>
+      <button type="button">+</button>
 
-      <button type="submit">Найти</button>
+    <button type="submit">Найти</button>
     </form>
     </section>
     <article>

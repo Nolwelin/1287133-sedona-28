@@ -27,36 +27,36 @@
       </nav>
       </header>
   <main>
-    <form>
+    <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <label>
-          <input type="checkbox" checked>
+          <input type="checkbox" id="pool" name="pool" checked>
         <span>Бассейн</span>
       </label>
       <label>
-        <input type="checkbox">
+        <input type="checkbox" id="parking" name="parking">
         <span>Парковка</span>
       </label>
         <label>
-          <input type="checkbox">
+          <input type="checkbox" id="wi-fi" name="wi-fi">
         <span>WI-FI</span>
       </label>
     </fieldset>
       <fieldset>
         <legend>Тип жилья:</legend>
         <label>
-          <input type="checkbox" checked>
+          <input type="checkbox" id="hotel" name="hotel" checked>
         <span>Гостиница</span>
       </label>
 
         <label>
-          <input type="checkbox" checked>
+          <input type="checkbox" id="motel" name="motel" checked>
         <span>Мотель</span>
       </label>
 
         <label>
-          <input type="checkbox" checked>
+          <input type="checkbox" id="apartment" name="apartment" checked>
         <span>Апартаменты</span>
       </label>
 
@@ -66,12 +66,12 @@
         <legend>Стоимость в сутки (Р):</legend>
         <label>
           <span>От</span>
-        <input type="text" value="0">
+        <input type="text" id="price-min" name="price-min" pattern="[0-9]{1,4}" value="0" required>
         </label>
 
         <label>
           <span>До</span>
-        <input type="text" value="3000">
+        <input type="text" id="price-max" name="price-max" pattern="[0-9]{1,4}" value="3000" required>
       </label>
 
         <!--Добавила слайдеру атрибут multiple, но почему-то все равно не показывает так как нужно-->
