@@ -32,7 +32,7 @@
       <img src="img/welcome.svg" alt="Добро пожаловать в Седону" width="457px" height="351px">
     </div>
 
-  <h1 class="visually-hidden">Описание</h1>
+  <h1 class="visually-hidden">Описание преимуществ небольшого города Седоны штата Аризона</h1>
   <article>
     <h2>Седона - небольшой городок в аризоне заслуживающий большего!</h2>
      <p>Рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
@@ -93,19 +93,19 @@
       <h2>Поиск Гостиницы в Седоне</h2>
     <label>
       <span>Дата заезда:</span>
-      <!--Я понимаю, что мой паттерн не очень хороший, но пока не знаю как надо сделать правильно-->
-      <input type="text" id="checkin" name="checkin" pattern="[0-9]{1,2} [а-я]{3,8} [0-9]{4}" value="27 апреля 2017" required>
+
+      <input type="text" id="checkin" name="checkin" value="27 апреля 2017" required>
     </label>
     <label>
       <span>Дата выезда:</span>
-      <input type="text" id="checkout" name="checkout" pattern="[0-9]{1,2} [а-я]{3,8} [0-9]{4}" value="4 июля 2017" required>
+      <input type="text" id="checkout" name="checkout" value="4 июля 2017" required>
     </label>
     <label for="adult">Взрослые:</label>
       <button type="button">-</button>
       <input type="number" id="adult" name="adult" min="1" max="20" value="2" required>
       <button type="button">+</button>
 
-    <label for="children">Дети:</label>
+      <label for="children">Дети:</label>
       <button type="button">-</button>
       <input type="number" id="children" name="children" min="0" max="20" value="0" required>
       <button type="button">+</button>
@@ -126,16 +126,16 @@
     <a href="tel:+74956660166"><p>ТЕЛ: +7(495) 666-01-66</p></a>
     </section>
     <section>
-      <h2 class="visually-hidden">Соцсети</h2>
+      <h2 class="visually-hidden">Ссылки на соцсети</h2>
       <ul>
         <li>
-          <a href="blank.html" aria-label="Твиттер">Твиттер</a>
+          <a href="blank.html">Твиттер</a>
         </li>
         <li>
-          <a href="blank.html" aria-label="Фэйсбук">Фэйсбук</a>
+          <a href="blank.html">Фэйсбук</a>
         </li>
         <li>
-          <a href="blank.html" aria-label="Ютуб">Ютуб</a>
+          <a href="blank.html">Ютуб</a>
         </li>
       </ul>
     </section>
@@ -143,7 +143,7 @@
     <section>
       <h2 class="visually-hidden">Разработано:</h2>
       <p>Website by</p>
-      <a href="https://htmlacademy.ru/" aria-label="Главная страница HTML академии">HTML Academy</a>
+      <a href="https://htmlacademy.ru/">HTML Academy</a>
     </section>
   </footer>
 
