@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header>
-        <nav>
-        <ul>
+        <nav class="main-navigation">
+        <ul class="site-navigation">
           <li>
             <a href="blank.html">Информация</a>
           </li>
@@ -34,14 +36,14 @@
 
   <h1 class="visually-hidden">Описание преимуществ небольшого города Седоны штата Аризона</h1>
   <article>
-    <h2>Седона - небольшой городок в аризоне заслуживающий большего!</h2>
-     <p>Рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
+    <h2>Седона - небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+     <p class="gray">Рассмотрим 5 причин по которым седона круче, чем гранд каньон!</p>
    </article>
-   <section>
-      <div>
+   <section class="small">
+      <div class="white">
         <h2>Настоящий<br>городок</h2>
         <span>№1</span>
-        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <p class="gray">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
         <img src="img/image-city.jpg" alt="Город Седона" width="800x" height="256px">
       <div>
@@ -49,48 +51,54 @@
           <li>
             <img src="https://via.placeholder.com/50x50" alt="">
             <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="gray">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li>
             <img src="https://via.placeholder.com/50x50" alt="">
             <h2>Еда</h2>
-            <p>Всегда заказывай фирменный бургер,  вы не разочаруетесь!</p>
+            <p class="gray">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
             <img src="https://via.placeholder.com/50x50" alt="">
             <h2>Сувениры</h2>
-            <p>Не только китайского,но и местного производства</p>
+            <p class="gray">Не только китайского, но и местного производства</p>
           </li>
         </ul>
       </div>
        <img src="img/image-bridge.jpg" alt="Мост дьявола" width="800x" height="256px">
-      <div>
+      <div class="white">
         <h2>Там есть мост дьявола</h2>
         <span>№2</span>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <p class="gray">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <div>
         <h2>Небольшая площадь</h2>
-        <span>№3</span>
-        <p>Все достопримечательности находятся очень близко</p>
+        <div class="gray">
+          <span>№3</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
 
         <h2>Красивая дорога</h2>
-        <span>№4</span>
-        <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
+        <div class="gray">
+          <span>№4</span>
+          <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
+        </div>
 
         <h2>Мало туристов</h2>
-        <span>№5</span>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+        <div class="gray">
+          <span>№5</span>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </div>
       </div>
 
    </section>
   <section>
     <div>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <h2 class="white">Заинтересовались?</h2>
+      <p class="gray">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <h2>Поиск Гостиницы в Седоне</h2>
+    <form class="search" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="white">Поиск Гостиницы в Седоне</h2>
     <label>
       <span>Дата заезда:</span>
 
@@ -120,7 +128,7 @@
   </main>
 
   <footer>
-    <section>
+    <section class="important">
       <h2 class="visually-hidden">Контакты</h2>
       <a href="blank.html">#visitsedona</a>
     <a href="tel:+74956660166"><p>ТЕЛ: +7(495) 666-01-66</p></a>
