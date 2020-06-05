@@ -63,8 +63,20 @@ color: var(--basic-gray);
   font-weight: inherit;
 }
 
+.search h2 {
+  background-color: var(--basic-brown);
+}
+
 .small {
   line-height: 21px;
+}
+
+.hotel-detailed {
+  background-color: var(--basic-light-blue);
+}
+
+.hotel-booking {
+  background-color: var(--basic-brown);
 }
 
 .hotels {
@@ -81,12 +93,26 @@ color: var(--basic-gray);
 }
 
 .filter {
+  width: 1200px;
+  height: 217px;
   background-color: var(--basic-light-blue);
+  background-image: url(../img/background-catalog.png);
+  background-repeat: no-repeat;
+  line-height: 21px;
+  color: var(--basic-white);
 }
 
 .filter input {
   color: inherit;
   background-color: inherit;
+}
+
+.welcome {
+  width: 1200px;
+  height: 509px;
+  background-color: var(--basic-light-blue);
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
 }
 
 legend {
@@ -100,6 +126,10 @@ legend {
 .important {
   font-size: 21px;
   font-weight: bold;
+}
+
+.background-blue {
+  background-color: var(--basic-light-blue);
 }
 
 
